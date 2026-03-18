@@ -35,6 +35,20 @@
 
 ```text
 Cpp_study/
+├── 00-Basics/                     # 阶段零：工程基石 (补齐底层认知)
+│   ├── ConstSystem/               # Const 正确性专题
+│   │   ├── ConstPtr.cpp           # 常量指针与指针常量深度对比
+│   │   └── ConstMember.cpp        # const 成员函数与 mutable 语义实验
+│   ├── ReferenceSemantic/         # 引用与传递专题
+│   │   ├── PassByValue_Ref.cpp    # 传值、传引用、传指针性能压测对比
+│   │   └── ExplicitConvert.cpp    # explicit 构造函数防止隐式转换陷阱
+│   ├── ObjectModel/               # 对象模型与生命周期
+│   │   ├── DeepCopy.cpp           # 手写 String 类演示深拷贝与 Double Free
+│   │   ├── CopyVsAssignment.cpp   # 拷贝构造与赋值运算符执行时机拆解
+│   │   └── DtorChain.cpp          # 多重继承下的析构顺序探究
+│   └── MemoryFoundations/         # 内存布局基础
+│       ├── EmptyClassSize.cpp     # 空类、虚函数类、对齐规则 sizeof 实验
+│       └── StaticLayout.cpp       # 静态变量在 Data/BSS 段的分布验证
 ├── 01-Modern-CPP/                 # 阶段一：语言现代性
 │   ├── SmartPointers/             # 智能指针专题
 │   │   ├── RefCount.hpp           # 原子计数器封装
